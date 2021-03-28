@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".SearchFragment">
+
+    <EditText
+        android:id="@+id/editText"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="normal"
+        android:background="@drawable/search_bar"
+        android:paddingLeft="48dp"
+        android:hint="@string/find_company_or_ticker"
+        android:textSize="16sp"/>
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/editText"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/delete" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="72dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_stock"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:background="@color/colorWait"
+        android:textStyle="normal"
+        android:textSize="28sp"
+        android:lineHeight="32dp"
+        android:textAllCaps="false"
+        android:text="@string/stocks" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="89dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="116dp"
+        android:background="@color/colorWait"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:text="@string/favourite"
+        />
+
+
+</RelativeLayout>
