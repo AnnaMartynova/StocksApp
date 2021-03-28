@@ -55,6 +55,7 @@ class StockAdapter(var arrayList: ArrayList<StockeListResponse.StockListItem>) :
                 } else {
                     setBackgroundResource(R.color.colorWait)
                 }
+
                 if (item.changes == null || item.changesproc == null) {
 
                     val chislo = item.changes.toString()
