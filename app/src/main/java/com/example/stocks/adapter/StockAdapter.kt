@@ -107,3 +107,4 @@ class StockAdapter(var arrayList: ArrayList<StockeListResponse.StockListItem>) :
         }
     }
 }
+//
